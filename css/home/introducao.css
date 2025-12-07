@@ -7,10 +7,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0px 2.5rem;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .introducao-conteudo {
@@ -36,16 +32,6 @@
   margin-bottom: 1.25rem;
 }
 
-@media (max-width: 1200px) {
-  .introducao h1 {
-    font-size: 3rem;
-  }
-
-  .introducao p {
-    font-size: 1.125;
-  }
-}
-
 @media (max-width: 800px) {
   .introducao-bg {
     background: var(--cor-11);
@@ -62,7 +48,6 @@
   }
 
   .introducao h1 {
-    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
