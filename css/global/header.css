@@ -1,0 +1,75 @@
+.header-bg {
+  background: var(--cor-12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.header-menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.header-menu a {
+  padding: 1rem 0rem;
+  display: inline-block;
+  font-size: 1.125rem;
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 1.25rem;
+  }
+
+  .header-menu a {
+    background: var(--cor-11);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+  }
+
+  .header-menu a:hover {
+    background: var(--cor-10);
+    transition: 0.3s;
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 0.75rem;
+  }
+  .header-menu a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875;
+  }
+}
